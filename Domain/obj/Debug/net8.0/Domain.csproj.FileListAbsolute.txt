@@ -1,0 +1,12 @@
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/bin/Debug/net8.0/Domain.dll
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.dll
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/Debug/net8.0/ref/Domain.dll
