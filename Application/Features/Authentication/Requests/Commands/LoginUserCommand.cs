@@ -7,5 +7,5 @@ using BlogApp.Application.Features.Authentication.Dtos;
 
 public class LoginUserCommand : IRequest<CommonResponse<LoggedInUserDto>>
 {
-  public LoginUserDto RegisterUserDto { get; set; } = null!;
+  public LoginUserDto LoginUserDto { get; set; } = null!;
 }

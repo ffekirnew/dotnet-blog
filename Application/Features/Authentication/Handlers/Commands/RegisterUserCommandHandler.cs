@@ -3,13 +3,12 @@ namespace BlogApp.Application.Features.Authentication.Handlers.Commands;
 using MediatR;
 using AutoMapper;
 
-using BlogApp.Domain.Entitites;
 using BlogApp.Application.Common.Responses;
 using BlogApp.Application.Features.Authentication.Dtos;
 using BlogApp.Application.Features.Authentication.Requests.Commands;
 using BlogApp.Application.Contracts.Persistence.Repositories;
-using BlogApp.Application.Features.Authentication.Dtos.Validators;
-using BlogApp.Application.Contracts.Identity;
+using BlogApp.Application.Contracts.Identity.Services;
+using BlogApp.Application.Contracts.Identity.Models;
 
 public class RegisterUserCommandHandler
     : IRequestHandler<RegisterUserCommand, CommonResponse<LoggedInUserDto>>
@@ -34,55 +33,24 @@ public class RegisterUserCommandHandler
       CancellationToken cancellationToken
   )
   {
-    var dtoValidator = new RegisterUserDtoValidator();
-    var validationResult = dtoValidator.Validate(request.RegisterUserDto);
-
-    if (validationResult.IsValid == false)
+    var user = new RegisterUserRequest
     {
-      return new CommonResponse<LoggedInUserDto>
-      {
-        IsSuccess = false,
-        Message = "User registration failed.",
-        Error = validationResult.Errors.Select(error => error.ErrorMessage).ToList()
-      };
-    }
-
-    var userExists = await _authService.UsernameExists(
-        request.RegisterUserDto.Username
-    );
-
-    if (userExists == true)
-    {
-      return new CommonResponse<LoggedInUserDto>
-      {
-        IsSuccess = false,
-        Message = "User registration failed.",
-        Error = new List<string> { "Username Exists." }
-      };
-    }
-
-    userExists = await _authService.EmailExists(request.RegisterUserDto.Email);
-
-    if (userExists == true)
-    {
-      return new CommonResponse<LoggedInUserDto>
-      {
-        IsSuccess = false,
-        Message = "User registration failed.",
-        Error = new List<string> { "Email Exists." }
-      };
-    }
-
-    var authResponse = await _authService.Register(request.RegisterUserDto);
-
-    var createdUser = _mapper.Map<User>(authResponse.User);
-
-
-    return new CommonResponse<LoggedInUserDto>
-    {
-      IsSuccess = true,
-      Message = "User registration success.",
-      Value = new LoggedInUserDto { UserDto = _mapper.Map<UserDto>(createdUser), Token = authResponse.Token ?? "" }
+      UserName = request.RegisterUserDto.UserName,
+      Email = request.RegisterUserDto.Email,
+      Password = request.RegisterUserDto.Password
     };
+
+    var registrationResponse = await _authService.RegisterUser(user);
+
+    if (registrationResponse == null)
+    {
+      return new CommonResponse<LoggedInUserDto>
+      {
+        Errors = new List<string> { "User registration failed" }
+      };
+    }
+
+    var loggedInUser = _mapper.Map<LoggedInUserDto>(registrationResponse.User);
+    return CommonResponse<LoggedInUserDto>.Success(loggedInUser);
   }
 }

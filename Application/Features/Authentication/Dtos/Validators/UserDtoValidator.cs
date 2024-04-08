@@ -7,7 +7,7 @@ public class UserDtoValidator : AbstractValidator<IUserDto>
 {
   public UserDtoValidator()
   {
-    RuleFor(u => u.Username)
+    RuleFor(u => u.UserName)
         .NotEmpty()
         .WithMessage("{PropertyName} is required.")
         .MaximumLength(20)

@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "523ARZfZgRAL5bNow5wTlt+iKQnuP0TvRP5vGi+PnYxenbPGh+1ocJJH2bhOqTLiI1eMI5DZH09Xq3Vj5d0vdQ==",
+  "dgSpecHash": "zxq/6F0bajRa+Ie52VlsIb8Z/YREUAtyjUmpWnQiEb7Wk71dIRBX2oULBwOGpRanQaJnyn0ewr95dTvORPmwZw==",
   "success": true,
   "projectFilePath": "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ffekirnew/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/ffekirnew/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
