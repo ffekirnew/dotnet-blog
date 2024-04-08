@@ -4,14 +4,94 @@
     "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj": {}
   },
   "projects": {
-    "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj": {
+    "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj",
-        "projectName": "Identity",
-        "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj",
+        "projectUniqueName": "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj",
         "packagesPath": "/Users/ffekirnew/.nuget/packages/",
-        "outputPath": "/Users/ffekirnew/code/projects/dotnet-blog/Identity/obj/",
+        "outputPath": "/Users/ffekirnew/code/projects/dotnet-blog/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ffekirnew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj": {
+                "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj",
+        "packagesPath": "/Users/ffekirnew/.nuget/packages/",
+        "outputPath": "/Users/ffekirnew/code/projects/dotnet-blog/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ffekirnew/.nuget/NuGet/NuGet.Config"
@@ -42,6 +122,186 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj",
+        "projectName": "Identity",
+        "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Identity/Identity.csproj",
+        "packagesPath": "/Users/ffekirnew/.nuget/packages/",
+        "outputPath": "/Users/ffekirnew/code/projects/dotnet-blog/Identity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ffekirnew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj": {
+                "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj"
+              },
+              "/Users/ffekirnew/code/projects/dotnet-blog/Persistence/Persistence.csproj": {
+                "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Persistence/Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.5.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ffekirnew/code/projects/dotnet-blog/Persistence/Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ffekirnew/code/projects/dotnet-blog/Persistence/Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Persistence/Persistence.csproj",
+        "packagesPath": "/Users/ffekirnew/.nuget/packages/",
+        "outputPath": "/Users/ffekirnew/code/projects/dotnet-blog/Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ffekirnew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj": {
+                "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Application/Application.csproj"
+              },
+              "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj": {
+                "projectPath": "/Users/ffekirnew/code/projects/dotnet-blog/Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

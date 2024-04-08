@@ -16,3 +16,5 @@
 /Users/ffekirnew/code/projects/dotnet-blog/Persistence/obj/Debug/net8.0/refint/Persistence.dll
 /Users/ffekirnew/code/projects/dotnet-blog/Persistence/obj/Debug/net8.0/Persistence.pdb
 /Users/ffekirnew/code/projects/dotnet-blog/Persistence/obj/Debug/net8.0/ref/Persistence.dll
+/Users/ffekirnew/code/projects/dotnet-blog/Persistence/bin/Debug/net8.0/Persistence.runtimeconfig.json
+/Users/ffekirnew/code/projects/dotnet-blog/Persistence/obj/Debug/net8.0/Persistence.genruntimeconfig.cache
